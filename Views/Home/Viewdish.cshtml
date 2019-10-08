@@ -1,0 +1,18 @@
+@using first_entity.Models
+@model Dish
+
+
+            <a href="/">Home</a>
+
+            <p>@Model.DishId</p>
+
+            <p>@Model.Name</p>
+
+
+            <p>Calories:@Model.Calories</p>
+
+            <p>Tastiness:@Model.Tastiness</p>
+
+            <a class="Delete" href="/Delete/@Model.DishId">Delete</a>
+
+            <a  class="Edit"href="/Editdish/@Model.DishId">Edit</a>

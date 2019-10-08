@@ -1,0 +1,20 @@
+@using first_entity.Models
+@model List<Dish> 
+
+
+            <h1>Welcome to CRUDelicious</h1>
+            <a href="/Newdish">Add a Dish</a>
+
+            <h3>Check out some recent dishes</h3>
+
+            <div class= "container">
+                @foreach (Dish item in @Model)
+                {
+                    <a href="/Viewdish/@item.DishId">@item.Name</a>
+                    @item.Chef
+            
+                }
+            </div>
+
+    
+
